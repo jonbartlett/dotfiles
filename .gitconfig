@@ -1,0 +1,36 @@
+[user]
+  name = Jon Bartlett
+  email = mail@jaybe.net <mailto:mail@jaybe.net>
+[core]
+  pager = less -FRSX
+  whitespace = fix
+	excludesfile = /Users/jon/.gitignore
+[diff]
+  renamelimit = 0
+  tool = vimdiff 
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[pack]
+ threads = 0
+[branch]
+  autosetupmerge = true
+[push]
+ default = matching
+[merge]
+  log = true
+[alias]
+  co = checkout
+  st = status
+  br = branch -a
+  ci = commit
+  l = log --graph --date=rfc --decorate --pretty=format:' %Cgreencommit: %H%d%n by %an <%ae>, %ad (%ar)%n%n\"%s\"%n%n'
+  apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
