@@ -17,5 +17,6 @@ ln -s "$(pwd)/vimspellfile-en.utf-8.add" ~/vimspellfile-en.utf-8.add
 ln -s "$(pwd)/.gitconfig" ~/.gitconfig
 ln -s "$(pwd)/.gitignore_global" ~/.gitignore_global
 
-
+# screen
+ln -s "$(pwd)/.screenrc" ~/.screenrc
 
