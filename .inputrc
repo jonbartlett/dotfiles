@@ -1,4 +1,8 @@
 # Readline Init File
+# 
+# This file controls the behaviour of line input editing for
+# programs that use the GNU Readline library.  Existing
+# programs include FTP, Bash, and GDB.
 #
 # http://www.gnu.org/software/bash/manual/html_node/Readline-Init-File.html#Readline-Init-File
 #
