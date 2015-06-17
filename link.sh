@@ -20,3 +20,5 @@ ln -s "$(pwd)/.gitignore_global" ~/.gitignore_global
 # screen
 ln -s "$(pwd)/.screenrc" ~/.screenrc
 
+# Bash Readline
+ln -s "$(pwd)/.inputrc" ~/.inputrc
