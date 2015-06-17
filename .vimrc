@@ -91,11 +91,10 @@ map <leader>tm :tabmove
 map <leader>f :FufFile<Enter>
 map <leader>b :FufBuffer<Enter>
 
-" Map Control-Tab to switch between buffers
+" Map Control-J K to switch between buffers
 " http://stackoverflow.com/questions/327411/how-do-you-prefer-to-switch-between-buffers-in-vim
-map <C-\> :bnext<cr>
-map <C-S-\> :bprevious<cr>
-
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
