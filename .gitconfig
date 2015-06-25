@@ -4,7 +4,8 @@
 [core]
   pager = less -FRSX
   whitespace = fix
-	excludesfile = ~/.gitignore_global
+ 	excludesfile = ~/.gitignore_global
+ editor = vim
 [diff]
   renamelimit = 0
   tool = vimdiff 
