@@ -5,6 +5,10 @@ export EDITOR="/usr/bin/vim"
 export LC_CTYPE=en_AU.UTF-8
 export PGHOST=localhost
 
+# environment to UTF-8 incase is defaults to ascii
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 # Color is good
 # http://www.geekology.co.za/blog/2009/04/enabling-bash-terminal-directory-file-color-highlighting-mac-os-x/
 export CLICOLOR=1
