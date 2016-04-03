@@ -32,6 +32,10 @@
   l = log --graph --date=rfc --decorate --pretty=format:' %Cgreencommit: %H%d%n by %an <%ae>, %ad (%ar)%n%n\"%s\"%n%n'
   apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
 [filter "media"]
+	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
 	required = true
