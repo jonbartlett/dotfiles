@@ -4,12 +4,33 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
-silent! call pathogen#runtime_append_all_bundles()
+" use Vundle instead of athogen
+" silent! call pathogen#runtime_append_all_bundles()
 
 syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
 
-runtime macros/matchit.vim        " Load the matchit plugin.
+" Start Vundle https://github.com/VundleVim/Vundle.vim
+" set the runtime path to include Vundle and initialize
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'aperezdc/vim-template'
+Plugin 'vim-ruby/vim-ruby'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" End Vundle
+
+runtime macros/matchit.vim        " load the matchit plugin.
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
