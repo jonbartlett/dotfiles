@@ -2,6 +2,7 @@
 
 #
 # Script to sym link dotfile from this Git Repo
+#  lastest version: https://github.com/jonbartlett/dotfiles/blob/master/link.sh
 #
 
 # vim
@@ -28,5 +29,6 @@ ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 #ln -s "$(pwd)/.bashrc_ubuntu" ~/.bashrc
 #
 # merge contents into current bashrc 
-cat "$(pwd)/.bashrc_osx" ~/.bashrc
-cat "$(pwd)/.bashrc_ubuntu" ~/.bashrc
+#cat "$(pwd)/.bashrc_osx" >> ~/.bashrc
+#cat "$(pwd)/.bashrc_ubuntu" >> ~/.bashrc
+
