@@ -7,9 +7,6 @@
 # vim
 ln -s "$(pwd)/.vimrc" ~/.vimrc
 
-# bash - you might not want to automate this if working between multiple OS - manually merge instead
-#ln -s "$(pwd)/.bashrc" ~/.bashrc
-
 # vim spell file
 ln -s "$(pwd)/vimspellfile-en.utf-8.add" ~/vimspellfile-en.utf-8.add
 
@@ -26,3 +23,10 @@ ln -s "$(pwd)/.inputrc" ~/.inputrc
 #TMUX
 ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 
+# bash - you might not want to automate this if working between multiple OS - manually merge instead
+#ln -s "$(pwd)/.bashrc_osx" ~/.bashrc
+#ln -s "$(pwd)/.bashrc_ubuntu" ~/.bashrc
+#
+# merge contents into current bashrc 
+cat "$(pwd)/.bashrc_osx" ~/.bashrc
+cat "$(pwd)/.bashrc_ubuntu" ~/.bashrc
