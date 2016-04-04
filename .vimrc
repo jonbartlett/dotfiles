@@ -1,6 +1,4 @@
-" Jon Bartlett 2011
-"   Modified version of PeepCode sample file
-"
+" Jon Bartlett 2011-2016
 
 set nocompatible                  " Must come first because it changes other options.
 
@@ -62,6 +60,7 @@ set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
+
 " Keep swap files in one location
 if has("win32")
    set directory=$TEMP
@@ -75,6 +74,7 @@ set shiftwidth=1                 " And again, related.
 set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
+
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
@@ -88,10 +88,6 @@ if has("win32")
 else
    colorscheme wombat
 endif
-
-" Or use vividchalk
-"colorscheme vividchalk 
-"colorscheme topfunky-light
 
 " change Leader key to comma (,)
 let mapleader=","
@@ -155,8 +151,8 @@ function! StartUp()
     end
 endfunction
 
-"How can I close vim if the only window left open is a NERDTree?
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+"How can I close vim if the only window left open is a NERDTree?  https://github.com/scrooloose/nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 autocmd VimEnter * call StartUp()
 
