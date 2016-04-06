@@ -24,6 +24,7 @@ alias l="ls -l"
 alias la="ls -a"
 alias ll="ls -la"
 alias c="clear"
+alias tmux="tmux -2" # tmux in 256 colours - http://stackoverflow.com/questions/10158508/lose-vim-colorscheme-in-tmux-mode
 
 set -o vi
 
@@ -31,4 +32,6 @@ set -o vi
 source ~/.bash-git-prompt/gitprompt.sh
 GIT_PROMPT_ONLY_IN_REPO=1
 
+#
 # END https://github.com/jonbartlett/dotfiles/blob/master/.bashrc_ubuntu
+#
