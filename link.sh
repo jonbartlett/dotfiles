@@ -21,8 +21,11 @@ ln -s "$(pwd)/.screenrc" ~/.screenrc
 # Bash Readline
 ln -s "$(pwd)/.inputrc" ~/.inputrc
 
-#TMUX
+# TMUX
 ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
+
+# simplenote.vim
+cp "$(pwd)/.simplenoterc" ~/.simplenoterc
 
 # bash - you might not want to automate this if working between multiple OS - manually merge instead
 #ln -s "$(pwd)/.bashrc_osx" ~/.bashrc
