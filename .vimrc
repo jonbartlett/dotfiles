@@ -25,12 +25,16 @@ Plugin 'sheerun/vim-wombat-scheme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'mrtazz/simplenote.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " End Vundle
+
+" Source SimpleNote VIM credentials
+source ~/.simplenoterc
 
 " workaround for vim-better-whitespace issue (toggle on/off)
 " https://github.com/ntpeters/vim-better-whitespace/issues/40
