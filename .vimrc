@@ -23,12 +23,19 @@ Plugin 'aperezdc/vim-template'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'sheerun/vim-wombat-scheme'
 Plugin 'vim-airline/vim-airline'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " End Vundle
+
+" workaround for vim-better-whitespace issue (toggle on/off)
+" https://github.com/ntpeters/vim-better-whitespace/issues/40
+autocmd VimEnter * DisableWhitespace
+autocmd VimEnter * EnableWhitespace
+
 
 runtime macros/matchit.vim        " load the matchit plugin.
 
@@ -65,7 +72,7 @@ set nowritebackup                 " And again.
 if has("win32")
    set directory=$TEMP
 else
-   set directory=$HOME/.vim/tmp//,. 
+   set directory=$HOME/.vim/tmp//,.
 endif
 
 " UNCOMMENT TO USE
@@ -159,7 +166,7 @@ autocmd VimEnter * call StartUp()
 
 "In vim, how do I get a file to open at the same line number I closed it at last time?
 "http://stackoverflow.com/questions/774560/in-vim-how-do-i-get-a-file-to-open-at-the-same-line-number-i-closed-it-at-last
-" Uncomment the following to have Vim jump to the last position when                                                       
+" Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
