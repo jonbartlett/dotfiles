@@ -25,7 +25,8 @@ Plugin 'sheerun/vim-wombat-scheme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'mrtazz/simplenote.vim'
+Plugin 'mrtazz/simplenote.vim'           " Simplenote support
+Plugin 'moll/vim-bbye'                   " close buffers properly
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -197,4 +198,7 @@ autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb "turn on sp
 
 " correctly identify .md files as Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Bbye (Buffer Bye) for Vim https://github.com/moll/vim-bbye
+:nnoremap <Leader>q :Bdelete<CR>
 
