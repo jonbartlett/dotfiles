@@ -195,6 +195,7 @@ autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 set spellfile=~/vimspellfile-en.utf-8.add
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_gb "turn on spelling for markdown files only
 autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb "turn on spelling for markdown files only
+autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_gb "turn on spelling for text files
 
 " correctly identify .md files as Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
