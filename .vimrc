@@ -27,6 +27,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mrtazz/simplenote.vim'           " Simplenote support
 Plugin 'moll/vim-bbye'                   " close buffers properly
+Plugin 'scrooloose/syntastic'            " Syntax checking
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -202,4 +203,14 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Bbye (Buffer Bye) for Vim https://github.com/moll/vim-bbye
 :nnoremap <Leader>q :Bdelete<CR>
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
