@@ -28,6 +28,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'mrtazz/simplenote.vim'           " Simplenote support
 Plugin 'moll/vim-bbye'                   " close buffers properly
 Plugin 'scrooloose/syntastic'            " Syntax checking
+Plugin 'thinca/vim-quickrun'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -136,11 +137,11 @@ map <C-K> :bprev<CR>
 "vnoremap ; :
 "vnoremap : ;
 
-" Disable arrow keys
-inoremap <Left>  <NOP>
-inoremap <Right> <NOP>
-inoremap <Up>    <NOP>
-inoremap <Down>  <NOP>
+" Disable arrow keys - conflicts with FuzzyFile Finder
+"inoremap <Left>  <NOP>
+"inoremap <Right> <NOP>
+"inoremap <Up>    <NOP>
+"inoremap <Down>  <NOP>
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
@@ -152,23 +153,25 @@ autocmd FileType xml setlocal shiftwidth=4 tabstop=4
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
-" Autoload NERDTree on opening VIM with no arguments
-"  from http://blogs.perl.org/users/ovid/2011/04/nerdtree-on-startup.html
-"  Changed to always load
-function! StartUp()
-    if 0 == argc()
-        NERDTree
-        wincmd l
-    else
-        NERDTree
-        wincmd l
-    end
-endfunction
+"" Autoload NERDTree on opening VIM with no arguments - uncomment to start on
+"" load
+""  from http://blogs.perl.org/users/ovid/2011/04/nerdtree-on-startup.html
+""  Changed to always load
+"function! StartUp()
+    "if 0 == argc()
+        "NERDTree
+        "wincmd l
+    "else
+        "NERDTree
+        "wincmd l
+    "end
+"endfunction
+
+"autocmd VimEnter * call StartUp()
 
 "How can I close vim if the only window left open is a NERDTree?  https://github.com/scrooloose/nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-autocmd VimEnter * call StartUp()
 
 
 "In vim, how do I get a file to open at the same line number I closed it at last time?
