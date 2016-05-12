@@ -185,7 +185,7 @@ endif
 
 " Expand NERDTree to current file
 " http://superuser.com/questions/356258/expanding-current-directory-in-nerdtree-without-changing-root
-map <leader>r :NERDTreeFind<cr>
+"map <leader>r :NERDTreeFind<cr> " 05/05/2016 - overlaps with Quickrun
 
 " Prevent Vim cursor jump to begining of the line after buffer switch
 " http://stackoverflow.com/questions/8292742/vim-cursor-jumps-to-begining-of-the-line-after-buffer-switch
@@ -217,3 +217,9 @@ set statusline+=%*
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Quickrun
+let g:quickrun_config = {}
+let g:quickrun_config['sql.db2'] = {
+\   'command':  'db2',
+\   'exec': '%c -td@ -f %s',
+\ }
