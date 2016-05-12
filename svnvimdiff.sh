@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# via https://evilshit.wordpress.com/2013/09/03/how-to-make-diffs-of-svn-and-git-files-with-vimdiff/
+
 # Configure your favorite diff program here.
 DIFF="/usr/bin/vimdiff"
 
