@@ -27,6 +27,14 @@ ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 # simplenote.vim
 cp "$(pwd)/.simplenoterc" ~/.simplenoterc
 
+#svn config # note this contains hardcoded reference to HOME dir
+mkdir ~/.subversion
+ln -s "$(pwd)/svn_config" ~/.subversion/config
+
+ln -s "$(pwd)/svnvimdiff.sh" ~/.subversion/svnvimdiff.sh
+chmod +x "$(pwd)/svnvimdiff.sh"
+
+
 # bash - you might not want to automate this if working between multiple OS - manually merge instead
 #ln -s "$(pwd)/.bashrc_osx" ~/.bashrc
 #ln -s "$(pwd)/.bashrc_ubuntu" ~/.bashrc
