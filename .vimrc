@@ -201,8 +201,10 @@ autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_gb "turn on spelling
 autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb "turn on spelling for markdown files only
 autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_gb "turn on spelling for text files
 
-" correctly identify .md files as Markdown
+" correctly identify files
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost *.ddl set filetype=sql
+
 
 " Bbye (Buffer Bye) for Vim https://github.com/moll/vim-bbye
 :nnoremap <Leader>q :Bdelete<CR>
