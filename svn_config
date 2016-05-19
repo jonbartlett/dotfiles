@@ -102,6 +102,7 @@ diff-cmd = /home/vagrant/.subversion/svnvimdiff.sh
 ### '*' matches leading dots, e.g. '*.rej' matches '.foo.rej'.
 # global-ignores = *.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo __pycache__
 #   *.rej *~ #*# .#* .*.swp .DS_Store
+global-ignores = .*.swp .DS_Store Guardfile Gemfile Gemfile.lock .bundle
 ### Set log-encoding to the default encoding for log messages
 # log-encoding = latin1
 ### Set use-commit-times to make checkout/update/switch/revert
@@ -141,17 +142,32 @@ enable-auto-props = yes
 ### applied to the file.  Note that auto-props functionality
 ### must be enabled, which is typically done by setting the
 ### 'enable-auto-props' option.
-# *.c = svn:eol-style=native
-# *.cpp = svn:eol-style=native
 # *.h = svn:keywords=Author Date Id Rev URL;svn:eol-style=native
 # *.dsp = svn:eol-style=CRLF
 # *.dsw = svn:eol-style=CRLF
-# *.png = svn:mime-type=image/png
-# *.jpg = svn:mime-type=image/jpeg
-# Makefile = svn:eol-style=native
+
+*.c = svn:eol-style=native
+*.cpp = svn:eol-style=native
+*.png = svn:mime-type=image/png
+*.jpg = svn:mime-type=image/jpeg
+Makefile = svn:eol-style=native
 *.sh = svn:eol-style=native;svn:executable
+*.ksh = svn:eol-style=native;svn:executable;svn:keywords=Date Revision Author Id HeadURL
 *.txt = svn:eol-style=native;svn:keywords=Author Date Id Rev URL;
 *.sql = svn:eol-style=native;svn:keywords=Author Date Id Rev URL;
+*.txt = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
+*.pls = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
+*.pks = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
+*.pkb = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
+*.java = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
+*.xml = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
+*.ldt = svn:eol-style=native
+*.wft = svn:eol-style=native
+*.rtf = svn:eol-style=native
+*.rdf = svn:eol-style=native
+*.zip = svn:mime-type=application/zip
+*.doc = svn:mime-type=application/msword
+
 
 ### Section for configuring working copies.
 [working-copy]
