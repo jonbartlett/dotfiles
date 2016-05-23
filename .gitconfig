@@ -1,6 +1,6 @@
 [user]
   name = Jon Bartlett
-  email = mail@jaybe.net <mailto:mail@jaybe.net>
+  email = mail@jaybe.net
 [core]
   pager = less -FRSX
   whitespace = fix
