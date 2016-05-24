@@ -35,7 +35,7 @@ ln -s "$(pwd)/svnvimdiff.sh" ~/.subversion/svnvimdiff.sh
 chmod +x "$(pwd)/svnvimdiff.sh"
 
 # ssh config
-if [ ! -d "$~/.ssh" ];
+if [ ! -d "$~/.ssh" ]; then
   mkdir ~/.subversion
 fi
 
@@ -45,7 +45,7 @@ ln -s "$(pwd)/ssh_config" ~/.ssh/config
 #ln -s "$(pwd)/.bashrc_osx" ~/.bashrc
 #ln -s "$(pwd)/.bashrc_ubuntu" ~/.bashrc
 #
-# merge contents into current bashrc 
+# merge contents into current bashrc
 #cat "$(pwd)/.bashrc_osx" >> ~/.bashrc
 #cat "$(pwd)/.bashrc_ubuntu" >> ~/.bashrc
 
