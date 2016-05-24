@@ -34,6 +34,12 @@ ln -s "$(pwd)/svn_config" ~/.subversion/config
 ln -s "$(pwd)/svnvimdiff.sh" ~/.subversion/svnvimdiff.sh
 chmod +x "$(pwd)/svnvimdiff.sh"
 
+# ssh config
+if [ ! -d "$~/.ssh" ];
+  mkdir ~/.subversion
+fi
+
+ln -s "$(pwd)/ssh_config" ~/.ssh/config
 
 # bash - you might not want to automate this if working between multiple OS - manually merge instead
 #ln -s "$(pwd)/.bashrc_osx" ~/.bashrc
