@@ -29,6 +29,7 @@ Plugin 'mrtazz/simplenote.vim'           " Simplenote support
 Plugin 'moll/vim-bbye'                   " close buffers properly
 Plugin 'scrooloose/syntastic'            " Syntax checking
 Plugin 'thinca/vim-quickrun'
+Plugin 'mileszs/ack.vim'                 " for Ack http://beyondgrep.com/
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -219,9 +220,10 @@ set statusline+=%*
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" Quickrun
+" Quickrun https://github.com/thinca/vim-quickrun
 let g:quickrun_config = {}
 let g:quickrun_config['sql.db2'] = {
 \   'command':  'db2',
-\   'exec': '%c -td@ -f %s',
+\   'cmdopt': '-td@ -f',
+\   'exec': '%c %o %s'
 \ }
