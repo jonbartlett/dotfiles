@@ -155,6 +155,7 @@ Makefile = svn:eol-style=native
 *.ksh = svn:eol-style=native;svn:executable;svn:keywords=Date Revision Author Id HeadURL
 *.txt = svn:eol-style=native;svn:keywords=Author Date Id Rev URL;
 *.sql = svn:eol-style=native;svn:keywords=Author Date Id Rev URL;
+*.ddl = svn:eol-style=native;svn:keywords=Author Date Id Rev URL;
 *.txt = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
 *.pls = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
 *.pks = svn:eol-style=native;svn:keywords=Date Revision Author Id HeadURL
