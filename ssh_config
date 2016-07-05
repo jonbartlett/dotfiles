@@ -16,6 +16,42 @@ Host *
      ControlPath /tmp/%r@%h:%p
      ControlPersist yes
 
+Host edwdev
+     Hostname dj2102d-dbsa001.davidjones.com.au
+     User dev_jbartlett
+     Port 22
+
+Host edwbat
+     Hostname dj2102b-dbsa001
+     User dev_jbartlett
+     Port 22
+
+Host edwtst
+     Hostname dj2102t-dbsa001
+     User dev_jbartlett
+     Port 22
+
+Host edwpreprod
+     Hostname dj2102e-dbsa001
+     User dev_jbartlett
+     Port 22
+
+Host edwprod
+     Hostname dj2102p-dbsa001
+     User dev_jbartlett
+     Port 22
+
+Host apadm
+     Hostname djrpasprddb01
+     User apadm
+     Port 22
+
+Host mfpadm
+     Hostname djrpasprddb01
+     User mfpadm
+     Port 22
+
+#
 ## override as per host ##
 #Host server1
      #HostName server1.cyberciti.biz
