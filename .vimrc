@@ -30,6 +30,7 @@ Plugin 'moll/vim-bbye'                   " close buffers properly
 Plugin 'scrooloose/syntastic'            " Syntax checking
 Plugin 'thinca/vim-quickrun'
 Plugin 'mileszs/ack.vim'                 " for Ack http://beyondgrep.com/
+Plugin 'chrisbra/unicode.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
