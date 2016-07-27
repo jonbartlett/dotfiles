@@ -28,6 +28,8 @@ alias l="ls -l"
 alias la="ls -a"
 alias ll="ls -la"
 alias c="clear"
+alias mv="mv -n" # no-clobber
+alias cp="cp -n" # no-clobber
 alias tmux="tmux -2" # tmux in 256 colours - http://stackoverflow.com/questions/10158508/lose-vim-colorscheme-in-tmux-mode
 
 # Fancy GIT bash prompt via https://github.com/magicmonty/bash-git-prompt
