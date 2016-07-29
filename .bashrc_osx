@@ -32,6 +32,19 @@ alias mv="mv -n" # no-clobber
 alias cp="cp -n" # no-clobber
 alias tmux="tmux -2" # tmux in 256 colours - http://stackoverflow.com/questions/10158508/lose-vim-colorscheme-in-tmux-mode
 
+#svn
+alias svns="svn status"
+alias svnu="svn update"
+
+## http://unix.stackexchange.com/questions/23672/how-to-use-the-svn-cli-effectively
+## Show the status of modified files (in particular, to notice potential conflicts in the next update)
+#svnm () {
+  #[[ $# -ne 0 ]] || set .
+  #svn merge -r BASE:HEAD --dry-run "$@" | sed -e '/^-/d'
+  #return $pipestatus[1]
+#}
+
+
 # Fancy GIT bash prompt via https://github.com/magicmonty/bash-git-prompt
 # Set config variables first
 GIT_PROMPT_ONLY_IN_REPO=0

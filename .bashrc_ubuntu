@@ -31,6 +31,19 @@ alias tmux="tmux -2" # tmux in 256 colours - http://stackoverflow.com/questions/
 # VIM keys
 set -o vi
 
+#svn
+alias svns="svn status"
+alias svnu="svn update"
+alias svnl="svn log"
+
+## http://unix.stackexchange.com/questions/23672/how-to-use-the-svn-cli-effectively
+## Show the status of modified files (in particular, to notice potential conflicts in the next update)
+#svnm () {
+  #[[ $# -ne 0 ]] || set .
+  #svn merge -r BASE:HEAD --dry-run "$@" | sed -e '/^-/d'
+  #return $pipestatus[1]
+#}
+
 # https://github.com/magicmonty/bash-git-prompt
 source ~/.bash-git-prompt/gitprompt.sh
 GIT_PROMPT_ONLY_IN_REPO=0
