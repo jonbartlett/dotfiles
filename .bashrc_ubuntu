@@ -67,6 +67,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# work around strange display issues when connecting to AIX
+alias ssh="TERM=xterm ssh"
+
 #
 # END https://github.com/jonbartlett/dotfiles/blob/master/.bashrc_ubuntu
 #
