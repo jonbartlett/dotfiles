@@ -17,7 +17,7 @@ Host *
 #     ControlPersist yes
 
 Host edwdev
-     Hostname dj2102d-dbsa001.davidjones.com.au
+     Hostname dj2102d-dbsa001
      User dev_jbartlett
      Port 22
 
