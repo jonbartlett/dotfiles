@@ -1,6 +1,0 @@
-"
-" for simplenote.vim
-" https://github.com/mrtazz/simplenote.vim
-
-let g:SimplenoteUsername = "your simplenote username"
-let g:SimplenotePassword = "your simplenote password"
