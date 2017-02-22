@@ -2,7 +2,7 @@
 
 #
 # Script to sym link dotfile from this Git Repo
-#  lastest version: https://github.com/jonbartlett/dotfiles/blob/master/link.sh
+#  lastest version: https://github.com/jonbartlett/dotfiles/blob/master/stowaway.sh
 #
 # for d in `ls .`;
 # do
