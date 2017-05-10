@@ -1,0 +1,6 @@
+# https://beyondgrep.com/documentation/ack-2.04-man.html#the__ackrc_file
+
+--ignore-file=ext:jar
+
+# Always color, even if piping to a another program
+--color

@@ -16,6 +16,7 @@ stow git
 stow screen
 stow inputrc
 stow tmux
+stow ack
 
 chmod +x subversion/.subversion/svnvimdiff.sh
 rm ~/.subversion/config; stow subversion
