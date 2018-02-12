@@ -229,3 +229,6 @@ let g:quickrun_config['sql.db2'] = {
 \   'cmdopt': '-td@ -f',
 \   'exec': '%c %o %s'
 \ }
+
+" ignore whitespace in vimdiff
+set diffopt+=iwhite
