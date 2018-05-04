@@ -86,9 +86,25 @@ else
 endif
 
 " UNCOMMENT TO USE
-set tabstop=1                    " Global tab width.
-set shiftwidth=1                 " And again, related.
-set expandtab                    " Use spaces instead of tabs
+"set tabstop=1                    " Global tab width.
+"set shiftwidth=1                 " And again, related.
+"set expandtab                    " Use spaces instead of tabs
+set tabstop=2       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+
+set shiftwidth=2    " Indents will have a width of 4
+
+set softtabstop=2   " Sets the number of columns for a TAB
+
+set expandtab       " Expand TABs to spaces
+
+
+
+set list
+"set listchars=tab:ᐅ\ ,eol:¬
+set listchars=tab:ᐅ\
 
 set laststatus=2                  " Show the status line all the time
 
