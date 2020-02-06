@@ -39,7 +39,7 @@ filetype plugin indent on    " required
 " End Vundle
 
 " Source SimpleNote VIM credentials
-source ~/.simplenoterc
+"source ~/.simplenoterc
 
 " workaround for vim-better-whitespace issue (toggle on/off)
 " https://github.com/ntpeters/vim-better-whitespace/issues/40
