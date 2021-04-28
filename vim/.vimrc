@@ -248,3 +248,5 @@ let g:quickrun_config['sql.db2'] = {
 
 " ignore whitespace in vimdiff
 set diffopt+=iwhite
+
+set mouse=a " mouse scrolling
