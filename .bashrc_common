@@ -1,9 +1,0 @@
-#
-# START https://github.com/jonbartlett/dotfiles/blob/master/.bashrc_common
-#
-
-# TODO - move all common code here and either 'source' or rely on manual merge
-
-#
-# END https://github.com/jonbartlett/dotfiles/blob/master/.bashrc_common
-#

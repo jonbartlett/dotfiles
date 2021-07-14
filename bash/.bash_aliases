@@ -16,3 +16,5 @@ alias cp="cp -n" # no-clobber
 alias gits="git status -sb"
 
 alias rlsqlplus='rlwrap sqlplus'
+
+alias tmux="tmux -2" # tmux in 256 colours - http://stackoverflow.com/questions/10158508/lose-vim-colorscheme-in-tmux-mode
